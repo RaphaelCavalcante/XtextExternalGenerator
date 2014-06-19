@@ -1,0 +1,39 @@
+module org.xtext.example.mydsl.GenerateMyDsl
+
+import org.eclipse.emf.mwe.utils.*
+import org.eclipse.xtext.generator.*
+import org.eclipse.xtext.ui.generator.*
+
+var grammarURI = "classpath:/org/xtext/example/mydsl/MyDsl.xtext"
+var fileExtensions = "mydsl"
+var projectName = "org.xtext.example.mydsl.generator"
+var runtimeProject = "../${projectName}"
+var encoding = "UTF-8"
+
+Workflow {
+    bean = StandaloneSetup {
+    	scanClassPath = true
+    	platformUri = "${runtimeProject}/.."
+    }
+    
+    component = DirectoryCleaner {
+    	directory = "${runtimeProject}/src-gen"
+    }
+
+    component = Generator {
+    	pathRtProject = runtimeProject
+
+    	projectNameRt = projectName
+
+    	encoding = encoding
+    	
+    	language = auto-inject {
+    		uri = grammarURI
+    
+    		// generator API
+    		fragment = generator.GeneratorFragment auto-inject {}
+
+    	}
+    }
+}
+
