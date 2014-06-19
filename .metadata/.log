@@ -1,0 +1,99 @@
+
+!ENTRY org.infinitest.eclipse 4 0 2014-06-19 17:16:31.180
+!MESSAGE Error executing event runnable: Looking for tests
+!STACK 0
+java.lang.NullPointerException
+	at org.infinitest.eclipse.trim.VisualStatusPresenter.statusChanged(VisualStatusPresenter.java:104)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.setStatus(EclipseWorkspace.java:83)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjects(EclipseWorkspace.java:71)
+	at org.infinitest.eclipse.event.ClassFileChangeProcessor.processEvent(ClassFileChangeProcessor.java:56)
+	at org.infinitest.eclipse.event.EventProcessorRunnable.run(EventProcessorRunnable.java:47)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.processEvent(SwtEventQueue.java:88)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.run(SwtEventQueue.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.infinitest.eclipse 4 0 2014-06-19 17:16:31.787
+!MESSAGE Error executing event runnable: Looking for tests
+!STACK 0
+java.lang.NullPointerException
+	at org.infinitest.eclipse.trim.VisualStatusPresenter.statusChanged(VisualStatusPresenter.java:104)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.setStatus(EclipseWorkspace.java:83)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjects(EclipseWorkspace.java:71)
+	at org.infinitest.eclipse.event.ClassFileChangeProcessor.processEvent(ClassFileChangeProcessor.java:56)
+	at org.infinitest.eclipse.event.EventProcessorRunnable.run(EventProcessorRunnable.java:47)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.processEvent(SwtEventQueue.java:88)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.run(SwtEventQueue.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.infinitest.eclipse 4 0 2014-06-19 17:17:05.882
+!MESSAGE Error executing event runnable: Looking for tests
+!STACK 0
+java.lang.NullPointerException
+	at org.infinitest.eclipse.trim.VisualStatusPresenter.statusChanged(VisualStatusPresenter.java:104)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.setStatus(EclipseWorkspace.java:83)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjects(EclipseWorkspace.java:71)
+	at org.infinitest.eclipse.event.ClassFileChangeProcessor.processEvent(ClassFileChangeProcessor.java:56)
+	at org.infinitest.eclipse.event.EventProcessorRunnable.run(EventProcessorRunnable.java:47)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.processEvent(SwtEventQueue.java:88)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.run(SwtEventQueue.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.infinitest.eclipse 4 0 2014-06-19 17:17:06.485
+!MESSAGE Error executing event runnable: Looking for tests
+!STACK 0
+java.lang.NullPointerException
+	at org.infinitest.eclipse.trim.VisualStatusPresenter.statusChanged(VisualStatusPresenter.java:104)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.setStatus(EclipseWorkspace.java:83)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjects(EclipseWorkspace.java:71)
+	at org.infinitest.eclipse.event.ClassFileChangeProcessor.processEvent(ClassFileChangeProcessor.java:56)
+	at org.infinitest.eclipse.event.EventProcessorRunnable.run(EventProcessorRunnable.java:47)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.processEvent(SwtEventQueue.java:88)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.run(SwtEventQueue.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.infinitest.eclipse 4 0 2014-06-19 17:17:07.088
+!MESSAGE Error executing event runnable: Looking for tests
+!STACK 0
+java.lang.NullPointerException
+	at org.infinitest.eclipse.trim.VisualStatusPresenter.statusChanged(VisualStatusPresenter.java:104)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.setStatus(EclipseWorkspace.java:83)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjectsIn(EclipseWorkspace.java:95)
+	at org.infinitest.eclipse.workspace.EclipseWorkspace.updateProjects(EclipseWorkspace.java:73)
+	at org.infinitest.eclipse.event.ClassFileChangeProcessor.processEvent(ClassFileChangeProcessor.java:56)
+	at org.infinitest.eclipse.event.EventProcessorRunnable.run(EventProcessorRunnable.java:47)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.processEvent(SwtEventQueue.java:88)
+	at org.infinitest.eclipse.SwtEventQueue$InfinitestJob.run(SwtEventQueue.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 2 2014-06-19 17:21:30.600
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: /home/raphael/workspace/Xtext/XtextExternalGenerator/.metadata/.plugins/org.eclipse.pde.core/.p2/org.eclipse.equinox.p2.engine/profileRegistry.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.restore(SimpleProfileRegistry.java:480)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfileMap(SimpleProfileRegistry.java:338)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfiles(SimpleProfileRegistry.java:320)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:168)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:274)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 568 2014-06-19 17:21:30.612
+!MESSAGE Could not write metadata for '/'.
+!STACK 0
+java.io.FileNotFoundException: /home/raphael/workspace/Xtext/XtextExternalGenerator/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:142)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1709)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
